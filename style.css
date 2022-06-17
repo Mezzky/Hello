@@ -1,0 +1,246 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+*,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Gill sans', 'sans-serif';
+    scroll-behavior: smooth;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: #153601;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url(img/forest-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Font Awesome Style */
+.fa-face-grin-beam{
+    color: rgb(255, 123, 0);
+}
+.fa-sun{
+    color: rgb(255, 196, 0);
+}
+.fa-clover{
+    color: rgb(60, 138, 60);
+}
+.fa-hand-holding-heart{
+    color: rgb(255, 143, 161);
+}
+.fa-fire{
+    color: rgb(255, 145, 0);
+}
+.fa-heart-crack, .fa-heart{
+    color: red;
+    font-size: 70px;
+}
+.fa-face-laugh-squint{
+    color: rgb(255, 230, 0);
+}
+.fa-circle-play{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+
+/* Main Style */
+.container-opening{
+    margin: auto;
+    width: 100%;
+    padding: 150px 100px 200px;
+    box-sizing: border-box;
+    gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-opening header{
+    /* padding: 20px 30px; */
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-opening header p{
+    font-size: 30px;
+}
+
+.container-opening .angle-down a{
+    font-size: 30px;
+    font-weight: 600;
+    color: #378507;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 100ms ease;
+}
+.container-opening .angle-down a:hover{
+    color: #153601;
+}
+
+.container-opening .angle-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-opening .angle-down i{
+    font-size: 60px;
+    color: #378507;
+    animation: upanddown 2000ms linear infinite;
+}
+.container-opening .angle-down a:hover i{
+    color: #153601;
+}
+
+/* Message */
+.container-message{
+    margin: 500px auto 0;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-message .card{
+    background-color: #fff;
+    border: 4px solid #378507;
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-message .card p{
+    text-align: center;
+}
+
+.container-message .card i{
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.box{
+    background-color: red;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    margin: 200px auto;
+    transition: 300ms ease;
+}
+.box:hover{
+    background-color: #fff;
+}
+.box .tap{
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    transition: 300ms;
+}
+.box:hover .tap{
+    transform: scale(1.5);
+    opacity: 0;
+}
+.box .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box .text span{
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: rgba(255,255,255,.4);
+    border-top: 3px solid #153601;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+    font-weight: 100;
+}
+
+/* ANIMATIONS */
+@keyframes upanddown {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 480px) {
+    p{
+        font-size: 20px;
+    }
+    .container-opening header{
+        padding: 10px 20px;
+    }
+    .container-opening header p{
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .container-opening .angle-down a{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    p{
+        font-size: 15px;
+    }
+    .container-opening header{
+        padding: 10px 20px;
+    }
+    .container-opening header p{
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .container-opening .angle-down a{
+        font-size: 4.5vw;
+    }
+}
