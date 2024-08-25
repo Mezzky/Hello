@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth overflow-x-hidden" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday</title>
     <link rel="stylesheet" href="./css/style-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Link AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -33,9 +34,13 @@
 </head>
     
 <body class="scroll-smooth">
-  <!-- Add your audio element here -->
+  <!-- Button to Play Music -->
+  <button onclick="document.getElementById('background-music').play()" class="fixed top-5 right-5 bg-blue-500 text-white p-4 rounded-full flex items-center gap-2 hover:bg-blue-700 transition duration-300">
+    <i class="fas fa-music"></i>
+  </button>
   <audio id="background-music" autoplay loop>
     <source src="./Assets/music/birthday-song.mp3" type="audio/mpeg">
+    <source src="./Assets/music/birthday-song.ogg" type="audio/ogg">
     Your browser does not support the audio element.
   </audio>
 
@@ -51,7 +56,7 @@
       <p class="font-mono">Waktu cepat banget ya, rasanya baru kemarin kita Lulus Sekolah. Pokoknya, kamu tuh keren banget udah bisa sampai sejauh ini, sibuk banget deh pokoknya demi masa depannya hahahaha</p>
     </div>
     
-    <div data-aos="fade-left" data-aos-duration="2000" class="p-5 bg-white/50 rounded-lg flex flex-col gap-5">
+    <div data-aos="fade-right" data-aos-duration="2000" class="p-5 bg-white/50 rounded-lg flex flex-col gap-5">
       <h2 class="text-2xl font-bold">Doa</h2>
       <p class="font-mono">Selamat ulang tahun ya, Arin! Semoga tahun ini dan kedepannya kamu makin sukses, bahagia, tetap istiqomah masyaallah🤗 dan selalu dikelilingi orang-orang baik. Jangan lupa tetap jadi dirimu yang selalu baik dan peduli ke sekitar ya!</p>
       <p class="font-mono">Arin, hari ini hari spesialmu! Semoga semua harapanmu tercapai. Jangan lupa nikmatin setiap momen di kehidupan km ya😆!</p>
